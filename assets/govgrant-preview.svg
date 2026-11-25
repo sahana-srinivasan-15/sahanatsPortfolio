@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ggBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1320"/>
+      <stop offset="100%" stop-color="#040810"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#ggBg)" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+
+  <!-- Top Bar -->
+  <rect x="0" y="0" width="800" height="52" rx="16" fill="#0f1e33" />
+  <circle cx="28" cy="26" r="5" fill="#ef4444" />
+  <circle cx="44" cy="26" r="5" fill="#f59e0b" />
+  <circle cx="60" cy="26" r="5" fill="#10b981" />
+  <text x="85" y="31" font-family="'Space Grotesk', monospace" font-size="12" fill="#7dd3fc" letter-spacing="1">GOVGRANT // DIGITAL SUBSIDY &amp; IMMUTABLE DISBURSEMENT LEDGER</text>
+  <rect x="670" y="14" width="105" height="24" rx="12" fill="rgba(6,182,212,0.15)" stroke="#06b6d4" stroke-width="1"/>
+  <text x="722" y="30" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" fill="#38bdf8" text-anchor="middle">SPRING BOOT</text>
+
+  <!-- Left Main Panel: Transaction Pipeline & Verification Engine -->
+  <g transform="translate(30, 75)">
+    <rect width="470" height="395" rx="12" fill="#0c182a" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+
+    <text x="24" y="32" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700" fill="#f8fafc">GRANT DISBURSEMENT LIFECYCLE</text>
+    <text x="24" y="50" font-family="'Space Grotesk', monospace" font-size="11" fill="#64748b">Batch #2026-IN-492 // 1,420 Beneficiaries Processed</text>
+
+    <!-- Pipeline Steps -->
+    <g transform="translate(24, 75)">
+      <!-- Step 1 -->
+      <rect width="422" height="55" rx="8" fill="#08101e" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+      <circle cx="28" cy="28" r="12" fill="rgba(16,185,129,0.2)"/>
+      <text x="28" y="32" font-family="'Space Grotesk', monospace" font-size="11" font-weight="700" fill="#10b981" text-anchor="middle">&#10003;</text>
+      <text x="50" y="24" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#e2e8f0">1. Citizen Identity &amp; Eligibility Match</text>
+      <text x="50" y="42" font-family="'Space Grotesk', monospace" font-size="10" fill="#94a3b8">Zero-Knowledge Verification against database // Cleared in 40ms</text>
+
+      <!-- Step 2 -->
+      <g transform="translate(0, 68)">
+        <rect width="422" height="55" rx="8" fill="#08101e" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+        <circle cx="28" cy="28" r="12" fill="rgba(16,185,129,0.2)"/>
+        <text x="28" y="32" font-family="'Space Grotesk', monospace" font-size="11" font-weight="700" fill="#10b981" text-anchor="middle">&#10003;</text>
+        <text x="50" y="24" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#e2e8f0">2. Anti-Collusion &amp; Double-Claim Gate</text>
+        <text x="50" y="42" font-family="'Space Grotesk', monospace" font-size="10" fill="#94a3b8">Cross-referenced across 4 state schemes // 0 double claims</text>
+      </g>
+
+      <!-- Step 3 -->
+      <g transform="translate(0, 136)">
+        <rect width="422" height="55" rx="8" fill="#08101e" stroke="rgba(6,182,212,0.4)" stroke-width="1.2"/>
+        <circle cx="28" cy="28" r="12" fill="rgba(6,182,212,0.2)"/>
+        <text x="28" y="32" font-family="'Space Grotesk', monospace" font-size="11" font-weight="700" fill="#06b6d4" text-anchor="middle">&#8635;</text>
+        <text x="50" y="24" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#38bdf8">3. Direct Benefit Transfer (DBT) Settlement</text>
+        <text x="50" y="42" font-family="'Space Grotesk', monospace" font-size="10" fill="#06b6d4">Automated NEFT/RTGS batch transmission in flight...</text>
+      </g>
+
+      <!-- Step 4 -->
+      <g transform="translate(0, 204)">
+        <rect width="422" height="55" rx="8" fill="#08101e" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+        <circle cx="28" cy="28" r="12" fill="rgba(255,255,255,0.05)"/>
+        <text x="28" y="32" font-family="'Space Grotesk', monospace" font-size="11" fill="#64748b" text-anchor="middle">#</text>
+        <text x="50" y="24" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="600" fill="#94a3b8">4. Cryptographic Proof &amp; Audit Seal</text>
+        <text x="50" y="42" font-family="'Space Grotesk', monospace" font-size="10" fill="#64748b">SHA-256 state seal appended to public audit ledger</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Panel: Ledger Proof & Cryptographic Hash -->
+  <g transform="translate(525, 75)">
+    <rect width="245" height="395" rx="12" fill="#0c182a" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+
+    <text x="20" y="32" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" fill="#f8fafc">IMMUTABLE AUDIT TRACE</text>
+
+    <!-- Hash block -->
+    <g transform="translate(18, 55)">
+      <rect width="209" height="90" rx="8" fill="#060d17" stroke="rgba(6,182,212,0.2)" stroke-width="1"/>
+      <text x="14" y="24" font-family="'Space Grotesk', sans-serif" font-size="10" fill="#38bdf8">BATCH LEDGER ROOT HASH</text>
+      <text x="14" y="48" font-family="'Space Grotesk', monospace" font-size="10" fill="#e2e8f0">0x7f4a...8e9b</text>
+      <text x="14" y="66" font-family="'Space Grotesk', monospace" font-size="9" fill="#10b981">&#10003; Cryptographically Sealed</text>
+    </g>
+
+    <!-- Stat 1 -->
+    <g transform="translate(18, 160)">
+      <rect width="209" height="65" rx="8" fill="#060d17" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      <text x="14" y="22" font-family="'Space Grotesk', sans-serif" font-size="10" fill="#64748b">FUNDS DISBURSED</text>
+      <text x="14" y="48" font-family="'Space Grotesk', monospace" font-size="20" font-weight="800" fill="#ffffff">&#8377; 4.82 <tspan font-size="11" fill="#38bdf8">Cr</tspan></text>
+    </g>
+
+    <!-- Stat 2 -->
+    <g transform="translate(18, 240)">
+      <rect width="209" height="65" rx="8" fill="#060d17" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      <text x="14" y="22" font-family="'Space Grotesk', sans-serif" font-size="10" fill="#64748b">DOUBLE CLAIM PREVENTION</text>
+      <text x="14" y="48" font-family="'Space Grotesk', monospace" font-size="20" font-weight="800" fill="#10b981">100.0<tspan font-size="12" fill="#94a3b8">%</tspan></text>
+    </g>
+
+    <rect x="18" y="325" width="209" height="38" rx="6" fill="#0284c7"/>
+    <text x="122" y="348" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">VERIFY LEDGER MERKLE ROOT</text>
+  </g>
+</svg>

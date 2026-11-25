@@ -1,0 +1,260 @@
+/* ==========================================================================
+   SAHANA SRINIVASAN // CINEMATIC PORTFOLIO
+   Keyframe Animations & Transition Utilities
+   ========================================================================== */
+
+/* --- Glowing Pulse Animation --- */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 10px var(--accent-cyan);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.9);
+    box-shadow: 0 0 2px var(--accent-cyan);
+  }
+}
+
+/* --- Sound Wave Equalizer Animation --- */
+@keyframes soundWave {
+  0% {
+    height: 4px;
+  }
+  100% {
+    height: 18px;
+  }
+}
+
+/* --- Radar Ping Wave --- */
+@keyframes radarPing {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+
+/* --- Smooth Floating Drift --- */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(1deg);
+  }
+}
+
+/* --- Shimmering Metallic Text Gradient --- */
+@keyframes shimmerText {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-active {
+  background: linear-gradient(90deg, #ffffff 0%, #cbd5e1 25%, #38bdf8 50%, #60a5fa 75%, #ffffff 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmerText 5s linear infinite;
+}
+
+/* --- Rotating Tech Ring --- */
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-orbit {
+  animation: spinSlow 25s linear infinite;
+}
+
+/* --- Text Mask Reveals --- */
+.text-mask-wrap {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.text-mask-child {
+  display: inline-block;
+  transform: translateY(105%);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.text-mask-wrap.revealed .text-mask-child {
+  transform: translateY(0%);
+}
+
+/* --- Clip-Path Reveal Effects --- */
+.clip-reveal-up {
+  clip-path: inset(100% 0 0 0);
+  transition: clip-path 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.clip-reveal-up.is-inview {
+  clip-path: inset(0 0 0 0);
+}
+
+/* --- Border Shimmer Hover Effect --- */
+@keyframes borderShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* --- Scroll Progress Top Bar --- */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, #0284c7, #38bdf8, #60a5fa);
+  z-index: 10000;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.8);
+  pointer-events: none;
+  transition: width 0.1s linear;
+}
+
+/* --- Holographic Iridescent Foil Sheen (Pure Cyan/Blue) --- */
+.holo-foil {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    115deg,
+    transparent 0%,
+    rgba(56, 189, 248, 0.15) 30%,
+    rgba(59, 130, 246, 0.25) 50%,
+    rgba(37, 99, 235, 0.15) 70%,
+    transparent 100%
+  );
+  background-size: 250% 250%;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s var(--ease-out-expo), background-position 0.6s ease;
+  z-index: 4;
+}
+
+.project-card:hover .holo-foil,
+.hero-visual-card:hover .holo-foil {
+  opacity: 0.85;
+  animation: holoShift 4s ease infinite alternate;
+}
+
+@keyframes holoShift {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/* --- Cinema Shutter Preloader Split --- */
+.preloader-shutter-top,
+.preloader-shutter-bottom {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50.5%;
+  background: #030406;
+  z-index: 1;
+  transition: transform 0.9s cubic-bezier(0.85, 0, 0.15, 1);
+}
+
+.preloader-shutter-top {
+  top: 0;
+  transform-origin: top;
+}
+
+.preloader-shutter-bottom {
+  bottom: 0;
+  transform-origin: bottom;
+}
+
+#preloader.shutter-open .preloader-shutter-top {
+  transform: translateY(-100%);
+}
+
+#preloader.shutter-open .preloader-shutter-bottom {
+  transform: translateY(100%);
+}
+
+/* --- Horizontal Project Showcase Track --- */
+.horizontal-scroll-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.horizontal-track {
+  display: flex;
+  gap: clamp(2rem, 4vw, 4rem);
+  width: max-content;
+  padding: 2rem 0;
+  will-change: transform;
+}
+
+.horizontal-card-slide {
+  width: clamp(340px, 60vw, 840px);
+  flex-shrink: 0;
+}
+
+/* --- Live Telemetry Top Bar --- */
+.hero-telemetry-hud {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+  margin: 0 auto 1.25rem;
+  justify-content: center;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+}
+
+.hero-telemetry-hud .hud-clock {
+  color: var(--accent-cyan);
+  font-weight: 600;
+}
+
+.hero-telemetry-hud .hud-fps {
+  color: #10b981;
+}
+
+/* Matrix Raining Code in Terminal */
+.terminal-matrix-rain {
+  color: #10b981;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  line-height: 1.3;
+  opacity: 0.9;
+  text-shadow: 0 0 8px #10b981;
+}

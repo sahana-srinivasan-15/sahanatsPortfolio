@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080a14"/>
+      <stop offset="50%" stop-color="#0d1124"/>
+      <stop offset="100%" stop-color="#06080e"/>
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181a30" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f1224" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="accent-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <pattern id="grid-pattern" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(168, 85, 247, 0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="480" fill="url(#bg-grad)"/>
+  <rect width="800" height="480" fill="url(#grid-pattern)"/>
+
+  <!-- Top App Window Header -->
+  <rect x="30" y="24" width="740" height="40" rx="8" fill="#121528" stroke="rgba(168, 85, 247, 0.25)" stroke-width="1"/>
+  <circle cx="55" cy="44" r="5" fill="#ef4444"/>
+  <circle cx="75" cy="44" r="5" fill="#f59e0b"/>
+  <circle cx="95" cy="44" r="5" fill="#10b981"/>
+  <text x="120" y="49" font-family="'Space Grotesk', monospace" font-size="12" fill="#c084fc" font-weight="600">JAVA OOP // MAIL MANAGEMENT SYSTEM v2.4</text>
+  <rect x="610" y="33" width="145" height="22" rx="4" fill="rgba(168, 85, 247, 0.15)" stroke="rgba(168, 85, 247, 0.4)" stroke-width="1"/>
+  <text x="622" y="48" font-family="'Space Grotesk', monospace" font-size="10" fill="#e9d5ff">CONSOLEDISP-ACTIVE</text>
+
+  <!-- Left Panel: Mail Routing & OOP Hierarchies -->
+  <rect x="30" y="78" width="280" height="375" rx="10" fill="url(#card-grad)" stroke="rgba(168, 85, 247, 0.2)" stroke-width="1"/>
+  
+  <text x="50" y="110" font-family="'Space Grotesk', monospace" font-size="11" fill="#a855f7" font-weight="700" letter-spacing="1">// OOP CLASS HIERARCHY</text>
+  
+  <rect x="50" y="125" width="240" height="48" rx="6" fill="rgba(168, 85, 247, 0.08)" stroke="rgba(168, 85, 247, 0.3)" stroke-width="1"/>
+  <text x="65" y="145" font-family="'Space Grotesk', monospace" font-size="11" fill="#ffffff" font-weight="600">abstract class MailMessage</text>
+  <text x="65" y="162" font-family="'Space Grotesk', monospace" font-size="9" fill="#a1a1aa">Encapsulated Headers &amp; Payload</text>
+
+  <line x1="170" y1="173" x2="170" y2="190" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+  <rect x="50" y="190" width="240" height="42" rx="6" fill="rgba(99, 102, 241, 0.08)" stroke="rgba(99, 102, 241, 0.3)" stroke-width="1"/>
+  <text x="65" y="208" font-family="'Space Grotesk', monospace" font-size="11" fill="#ffffff" font-weight="600">class PriorityMail extends Mail</text>
+  <text x="65" y="223" font-family="'Space Grotesk', monospace" font-size="9" fill="#a1a1aa">Polymorphic dispatchPriority()</text>
+
+  <line x1="170" y1="232" x2="170" y2="250" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+  <rect x="50" y="250" width="240" height="42" rx="6" fill="rgba(6, 182, 212, 0.08)" stroke="rgba(6, 182, 212, 0.3)" stroke-width="1"/>
+  <text x="65" y="268" font-family="'Space Grotesk', monospace" font-size="11" fill="#ffffff" font-weight="600">class BulkMail extends Mail</text>
+  <text x="65" y="283" font-family="'Space Grotesk', monospace" font-size="9" fill="#a1a1aa">Batch Queue &amp; Throttling</text>
+
+  <text x="50" y="325" font-family="'Space Grotesk', monospace" font-size="11" fill="#a855f7" font-weight="700" letter-spacing="1">// INBOX CAPACITY METRICS</text>
+  <rect x="50" y="340" width="240" height="8" rx="4" fill="rgba(255,255,255,0.1)"/>
+  <rect x="50" y="340" width="185" height="8" rx="4" fill="url(#accent-purple)"/>
+  <text x="50" y="365" font-family="'Space Grotesk', monospace" font-size="10" fill="#e4e4e7">Queue Utilization: 77% (1,540 / 2,000)</text>
+
+  <rect x="50" y="385" width="115" height="50" rx="6" fill="rgba(16, 185, 129, 0.08)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1"/>
+  <text x="60" y="404" font-family="'Space Grotesk', monospace" font-size="9" fill="#6ee7b7">DELIVERED</text>
+  <text x="60" y="424" font-family="'Space Grotesk', monospace" font-size="15" fill="#ffffff" font-weight="700">1,489</text>
+
+  <rect x="175" y="385" width="115" height="50" rx="6" fill="rgba(245, 158, 11, 0.08)" stroke="rgba(245, 158, 11, 0.3)" stroke-width="1"/>
+  <text x="185" y="404" font-family="'Space Grotesk', monospace" font-size="9" fill="#fde68a">QUEUED</text>
+  <text x="185" y="424" font-family="'Space Grotesk', monospace" font-size="15" fill="#ffffff" font-weight="700">51</text>
+
+  <!-- Right Panel: Live Console & Message Stream -->
+  <rect x="330" y="78" width="440" height="375" rx="10" fill="url(#card-grad)" stroke="rgba(168, 85, 247, 0.2)" stroke-width="1"/>
+
+  <rect x="345" y="95" width="410" height="32" rx="6" fill="#0b0d19" stroke="rgba(168, 85, 247, 0.15)" stroke-width="1"/>
+  <text x="360" y="115" font-family="'Space Grotesk', monospace" font-size="11" fill="#c084fc">LIVE SYSTEM LOGS &amp; ROUTING TELEMETRY</text>
+  <circle cx="735" cy="111" r="4" fill="#10b981"/>
+
+  <!-- Console Log Terminal Screen -->
+  <rect x="345" y="140" width="410" height="225" rx="6" fill="#05070e" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+
+  <text x="360" y="168" font-family="'Space Grotesk', monospace" font-size="11" fill="#10b981">[SYSTEM] Initializing MailDispatcherService...</text>
+  <text x="360" y="190" font-family="'Space Grotesk', monospace" font-size="11" fill="#e4e4e7">[OOP-INIT] Polymorphic Handler instantiated: MailRouter</text>
+  <text x="360" y="212" font-family="'Space Grotesk', monospace" font-size="11" fill="#a855f7">[MSG #4012] Priority: HIGH | Recipient: eng-leads@corp</text>
+  <text x="360" y="234" font-family="'Space Grotesk', monospace" font-size="11" fill="#6ee7b7">  -&gt; Encapsulation Check: PASS (Payload validated)</text>
+  <text x="360" y="256" font-family="'Space Grotesk', monospace" font-size="11" fill="#6ee7b7">  -&gt; Routing polymorphic dispatch: Dispatched via SecureSMTP</text>
+  <text x="360" y="278" font-family="'Space Grotesk', monospace" font-size="11" fill="#f59e0b">[MSG #4013] Bulk queue batch: 240 items processing...</text>
+  <text x="360" y="300" font-family="'Space Grotesk', monospace" font-size="11" fill="#a1a1aa">[STATUS] All mail threads operational. Memory Heap: 48MB</text>
+  <text x="360" y="322" font-family="'Space Grotesk', monospace" font-size="11" fill="#c084fc">console&gt; system.status.verifyAll() --&gt; OK (200ms)</text>
+  <text x="360" y="344" font-family="'Space Grotesk', monospace" font-size="11" fill="#38bdf8">console&gt; _</text>
+
+  <!-- Interactive Control Strip -->
+  <rect x="345" y="385" width="130" height="48" rx="6" fill="rgba(168, 85, 247, 0.12)" stroke="rgba(168, 85, 247, 0.35)" stroke-width="1"/>
+  <text x="365" y="405" font-family="'Space Grotesk', monospace" font-size="10" fill="#e9d5ff">OOP PARADIGM</text>
+  <text x="365" y="422" font-family="'Space Grotesk', monospace" font-size="12" fill="#ffffff" font-weight="700">Modular</text>
+
+  <rect x="485" y="385" width="130" height="48" rx="6" fill="rgba(99, 102, 241, 0.12)" stroke="rgba(99, 102, 241, 0.35)" stroke-width="1"/>
+  <text x="505" y="405" font-family="'Space Grotesk', monospace" font-size="10" fill="#c7d2fe">CONCURRENCY</text>
+  <text x="505" y="422" font-family="'Space Grotesk', monospace" font-size="12" fill="#ffffff" font-weight="700">Multi-Queue</text>
+
+  <rect x="625" y="385" width="130" height="48" rx="6" fill="rgba(16, 185, 129, 0.12)" stroke="rgba(16, 185, 129, 0.35)" stroke-width="1"/>
+  <text x="645" y="405" font-family="'Space Grotesk', monospace" font-size="10" fill="#a7f3d0">DELIVERY RATE</text>
+  <text x="645" y="422" font-family="'Space Grotesk', monospace" font-size="12" fill="#ffffff" font-weight="700">99.8% OK</text>
+</svg>

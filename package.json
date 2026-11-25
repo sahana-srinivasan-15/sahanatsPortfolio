@@ -1,0 +1,18 @@
+{
+  "name": "sahana-portfolio",
+  "version": "2.0.0",
+  "description": "Award-winning cinematic developer portfolio for Sahana Srinivasan",
+  "scripts": {
+    "dev": "npx serve . -l 3000",
+    "start": "npx serve . -l 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "ai",
+    "creative-developer",
+    "gsap",
+    "awwwards"
+  ],
+  "author": "Sahana Srinivasan",
+  "license": "MIT"
+}

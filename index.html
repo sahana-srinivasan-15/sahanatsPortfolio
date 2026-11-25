@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahana T S — Software Developer | Fresher (Java, Spring Boot, React, SQL)</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Portfolio of Sahana T S — Software Developer specializing in Java, Spring Boot, React.js, and SQL with hands-on internship experience at Infosys, 9.56 CGPA at Dr. MCET, and 200+ DSA problems solved.">
+  <meta name="keywords" content="Sahana T S, Software Developer, Java, Spring Boot, React.js, MySQL, Infosys Intern, MCET Pollachi, LeetCode, Portfolio">
+  <meta name="author" content="Sahana T S">
+  <meta name="theme-color" content="#050608">
+  
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Sahana T S — Software Developer | Fresher">
+  <meta property="og:description" content="Entry-level Software Developer with a strong foundation in Java, Spring Boot, and SQL. Skilled in full-stack development, REST APIs, and React.">
+  <meta property="og:type" content="website">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Background Interactive Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Ambient Film Grain Overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- Ambient Glow Orbs -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="ambient-glow ambient-glow-3"></div>
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- ========================================================================
+       1. CINEMATIC PRELOADER
+       ======================================================================== -->
+  <div id="preloader">
+    <div class="preloader-top">
+      <div class="preloader-status">
+        <span class="preloader-status-dot"></span>
+        <span>SAHANA T S &bull; SOFTWARE DEVELOPER</span>
+      </div>
+      <button class="preloader-skip-btn" id="preloader-skip-btn" title="Skip animation">SKIP [ESC]</button>
+    </div>
+
+    <div class="preloader-center">
+      <h1 class="preloader-title">
+        <span>SAHANA</span> <span>T S</span>
+      </h1>
+      <p class="preloader-subtitle text-gradient">SOFTWARE DEVELOPER | FRESHER &bull; JAVA &amp; FULL-STACK SPECIALIST</p>
+    </div>
+
+    <div class="preloader-bottom">
+      <div class="preloader-bar-wrap">
+        <div class="preloader-progress-bar" id="preloader-progress-bar"></div>
+      </div>
+      <div class="preloader-stats">
+        <span>LOADING ARSENAL, INTERNSHIP &amp; ACADEMICS...</span>
+        <span class="preloader-percent" id="preloader-percent">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       2. FLOATING NAVIGATION DOCK
+       ======================================================================== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-dock">
+      <a href="#hero" class="nav-logo" data-cursor="HOME">
+        <span>SAHANA T S</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#internship" class="nav-link" data-cursor="VIEW">Internship</a></li>
+        <li><a href="#projects" class="nav-link" data-cursor="VIEW">Projects</a></li>
+        <li><a href="#skills" class="nav-link" data-cursor="VIEW">Skills</a></li>
+        <li><a href="#education" class="nav-link" data-cursor="VIEW">Education</a></li>
+        <li><a href="#certifications" class="nav-link" data-cursor="VIEW">Certificates</a></li>
+        <li><a href="#contact" class="nav-link" data-cursor="VIEW">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="nav-cta-btn btn-magnetic" data-cursor="CONTACT">
+          <span>HIRE ME</span>
+          <span>&#8599;</span>
+        </a>
+
+        <!-- Mobile Drawer Hamburger -->
+        <button class="nav-mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Fullscreen Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-drawer">
+    <ul class="mobile-nav-links">
+      <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+      <li><a href="#internship" class="mobile-nav-link">01 &bull; Infosys Internship</a></li>
+      <li><a href="#projects" class="mobile-nav-link">02 &bull; Selected Projects</a></li>
+      <li><a href="#skills" class="mobile-nav-link">03 &bull; Technical Skills</a></li>
+      <li><a href="#education" class="mobile-nav-link">04 &bull; Education &amp; Scores</a></li>
+      <li><a href="#certifications" class="mobile-nav-link">05 &bull; Certifications &amp; Awards</a></li>
+      <li><a href="#contact" class="mobile-nav-link">06 &bull; Get In Touch</a></li>
+    </ul>
+    <a href="mailto:sahanasrinivasan4@gmail.com" class="btn-magnetic btn-primary" style="margin-top: 1rem;">
+      <span>sahanasrinivasan4@gmail.com</span>
+    </a>
+  </div>
+
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+
+    <!-- ======================================================================
+         3. HERO SECTION
+         ====================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Hero Content -->
+          <div class="hero-content">
+            <h1 class="hero-title">
+              SCALABLE <span class="text-gradient">SOFTWARE DEVELOPMENT</span> &amp; BACKEND SYSTEMS
+            </h1>
+
+            <div class="hero-cycling-box">
+              <span>SAHANA T S &bull;&nbsp;</span>
+              <span id="cycling-role">Software Developer</span>
+              <span class="cursor-blink"></span>
+            </div>
+
+            <p class="hero-bio">
+              Entry-level Software Developer with a strong foundation in <strong>Java</strong>, <strong>Spring Boot</strong>, and <strong>SQL</strong>. Skilled in full-stack development, REST APIs, and <strong>React</strong>, with hands-on internship experience at <strong>Infosys</strong> and <strong>200+ DSA problems</strong> solved. Eager to contribute to building scalable software solutions.
+            </p>
+
+            <!-- Areas of Interest -->
+            <div class="interest-pills">
+              <span class="interest-pill">Software Development</span>
+              <span class="interest-pill">Backend Development</span>
+              <span class="interest-pill">Full Stack Development</span>
+            </div>
+
+            <!-- Quick Telemetry Row from Resume -->
+            <div class="hero-stats-row">
+              <div class="hero-stat-item">
+                <span class="hero-stat-num text-gradient">9.56</span>
+                <span class="hero-stat-label">B.E. CSE CGPA (MCET)</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="hero-stat-num text-gradient">200+</span>
+                <span class="hero-stat-label">LeetCode DSA Solved</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="hero-stat-num text-gradient">Gold Badge</span>
+                <span class="hero-stat-label">HackerRank SQL 5-Star</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="hero-stat-num text-gradient">Infosys</span>
+                <span class="hero-stat-label">Full Stack Intern</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. INFOSYS INTERNSHIP SPOTLIGHT
+         ====================================================================== -->
+    <section class="container" id="internship" style="padding-top: clamp(3rem, 6vw, 5rem);">
+      <div class="section-header">
+        <div class="section-label">
+          <span class="label-dot"></span>
+          <span>01 &mdash; PROFESSIONAL EXPERIENCE</span>
+        </div>
+        <h2 class="section-title">
+          Industry <span class="text-gradient">Internship</span> Spotlight
+        </h2>
+        <p class="section-desc">
+          Hands-on enterprise software engineering experience building scalable full-stack applications with Spring Boot, React, and MySQL.
+        </p>
+      </div>
+
+      <div class="internship-spotlight">
+        <div class="holo-foil"></div>
+        <div class="internship-header">
+          <div>
+            <h3 class="internship-role">Java Full Stack Intern</h3>
+            <div class="internship-company">Infosys (Virtual Internship)</div>
+            <div style="font-family:var(--font-mono); font-size:0.8rem; color:var(--text-tertiary); margin-top:0.35rem;">
+              Technologies: <strong style="color:#ffffff;">Java, Spring Boot, React.js, MySQL, REST APIs, Postman</strong>
+            </div>
+          </div>
+          <span class="internship-period">July 2026 – September 2026</span>
+        </div>
+
+        <ul class="internship-bullets">
+          <li class="internship-bullet-item">
+            Developed a <strong>Digital Subsidy and Grant Administration Platform</strong> using Spring Boot and React.js.
+          </li>
+          <li class="internship-bullet-item">
+            Implemented robust <strong>REST APIs</strong> and <strong>MySQL database operations</strong> for streamlined public application processing and verification approval workflows.
+          </li>
+          <li class="internship-bullet-item">
+            Built responsive client user interfaces and conducted comprehensive endpoint integration testing using <strong>Postman</strong>.
+          </li>
+        </ul>
+
+        <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">Spring Boot</span>
+          <span class="tech-tag">React.js</span>
+          <span class="tech-tag">MySQL</span>
+          <span class="tech-tag">REST APIs</span>
+          <span class="tech-tag">Postman</span>
+          <span class="tech-tag">CRUD Operations</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. SELECTED FLAGSHIP PROJECTS (FROM RESUME)
+         ====================================================================== -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">
+            <span class="label-dot"></span>
+            <span>02 &mdash; PROJECTS PORTFOLIO</span>
+          </div>
+          <h2 class="section-title">
+            Featured <span class="text-gradient">Software Engineering</span> Builds
+          </h2>
+          <p class="section-desc">
+            Full-stack architectures, core Java database engines, and award-winning solutions developed with modern development standards.
+          </p>
+        </div>
+
+        <div class="projects-stack project-cards-container" id="projects-track-wrap">
+
+          <!-- PROJECT 01: Organisational Knowledge Gap Intelligence Platform -->
+          <div class="project-card-wrap">
+            <div class="project-card" data-cursor="EXPLORE">
+              <div class="holo-foil"></div>
+
+              <!-- Information Side -->
+              <div class="project-info">
+                <div>
+                  <div class="project-meta-top">
+                    <span class="project-num-badge">PROJECT 01</span>
+                    <span class="project-tag-pill">FULL-STACK &bull; ENTERPRISE AI</span>
+                  </div>
+                  <h3 class="project-title">Organisational Knowledge Gap Intelligence Platform</h3>
+                  <div class="project-subtitle">React.js, Spring Boot, MySQL &amp; Talent Analytics</div>
+                  <p class="project-desc">
+                    Developed a platform to identify employee skill gaps and recommend relevant learning paths. Implemented role-based administrative dashboards and skill assessment features with automated training path generation.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">React.js</span>
+                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">REST APIs</span>
+                    <span class="tech-tag">Role Dashboards</span>
+                  </div>
+                </div>
+
+                <div class="project-actions">
+                  <button class="btn-inspect-modal" data-project="knowledgegap" data-cursor="INSPECT">
+                    <span>INSPECT ARCHITECTURE</span>
+                    <span>&#8594;</span>
+                  </button>
+                  <a href="https://github.com/sahana-srinivasan-15/Organizational-knowledge-gap-intelligence-platform" target="_blank" rel="noopener noreferrer" class="btn-code-link" style="text-decoration:none;" data-cursor="GITHUB">
+                    <span>GITHUB REPO</span>
+                    <span>&#8599;</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 02: Digital Subsidy and Grant Administration Platform (Infosys) -->
+          <div class="project-card-wrap">
+            <div class="project-card" data-cursor="EXPLORE">
+              <div class="holo-foil"></div>
+
+              <!-- Information Side -->
+              <div class="project-info">
+                <div>
+                  <div class="project-meta-top">
+                    <span class="project-num-badge">PROJECT 02</span>
+                    <span class="project-tag-pill">INFOSYS INTERNSHIP &bull; PUBLIC SECTOR</span>
+                  </div>
+                  <h3 class="project-title">Digital Subsidy and Grant Administration Platform</h3>
+                  <div class="project-subtitle">Spring Boot, React.js, MySQL &amp; RESTful APIs</div>
+                  <p class="project-desc">
+                    Developed a Digital Subsidy and Grant Administration Platform during the Infosys Virtual Internship. Implemented secure REST APIs and MySQL database operations for application processing, verification approvals, and responsive UI tested via Postman.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">React.js</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">REST APIs</span>
+                    <span class="tech-tag">Postman</span>
+                  </div>
+                </div>
+
+                <div class="project-actions">
+                  <a href="https://digital-subsidy-and-grant-administr.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-inspect-modal" style="background:#38bdf8; color:#040e16; font-weight:700; text-decoration:none;" data-cursor="PROJECT">
+                    <span>PROJECT</span>
+                    <span>&#8599;</span>
+                  </a>
+                  <a href="https://github.com/sahana-srinivasan-15/Digital-Subsidy-and-Grant-Administration-Platform" target="_blank" rel="noopener noreferrer" class="btn-code-link" style="text-decoration:none;" data-cursor="GITHUB">
+                    <span>GITHUB REPO</span>
+                    <span>&#8599;</span>
+                  </a>
+                  <button class="btn-code-link" data-project="digitalgrant" data-cursor="INSPECT">
+                    <span>INSPECT ARCHITECTURE</span>
+                    <span>&#8594;</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 03: Bank Management System -->
+          <div class="project-card-wrap">
+            <div class="project-card" data-cursor="EXPLORE">
+              <div class="holo-foil"></div>
+
+              <!-- Information Side -->
+              <div class="project-info">
+                <div>
+                  <div class="project-meta-top">
+                    <span class="project-num-badge">PROJECT 03</span>
+                    <span class="project-tag-pill">CORE JAVA &bull; DATABASE CONNECTIVITY</span>
+                  </div>
+                  <h3 class="project-title">Bank Management System</h3>
+                  <div class="project-subtitle">Java, JDBC, MySQL &amp; Relational Transaction Operations</div>
+                  <p class="project-desc">
+                    Developed a banking application with database connectivity. Implemented ACID-compliant CRUD operations for managing customer and account records, deposits, withdrawals, and statement logs using Java and JDBC.
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">JDBC</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">CRUD Operations</span>
+                    <span class="tech-tag">ACID Transactions</span>
+                  </div>
+                </div>
+
+                <div class="project-actions">
+                  <button class="btn-inspect-modal" data-project="bankmanagement" data-open-terminal="true" style="background:#38bdf8; color:#040e16; font-weight:700; text-decoration:none;" data-cursor="TERMINAL">
+                    <span>LIVE TERMINAL</span>
+                    <span>&#8594;</span>
+                  </button>
+                  <a href="https://github.com/sahana-srinivasan-15/BankSystemManagement" target="_blank" rel="noopener noreferrer" class="btn-code-link" style="text-decoration:none;" data-cursor="GITHUB">
+                    <span>GITHUB REPO</span>
+                    <span>&#8599;</span>
+                  </a>
+                  <button class="btn-code-link" data-project="bankmanagement" data-cursor="INSPECT">
+                    <span>INSPECT ARCHITECTURE</span>
+                    <span>&#8594;</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 04: Mail Management System -->
+          <div class="project-card-wrap">
+            <div class="project-card" data-cursor="EXPLORE">
+              <div class="holo-foil"></div>
+
+              <!-- Information Side -->
+              <div class="project-info">
+                <div>
+                  <div class="project-meta-top">
+                    <span class="project-num-badge">PROJECT 04</span>
+                    <span class="project-tag-pill">OBJECT-ORIENTED PROGRAMMING &bull; SYSTEM DESIGN</span>
+                  </div>
+                  <h3 class="project-title">Mail Management System</h3>
+                  <div class="project-subtitle">Java SE, Object-Oriented Principles &amp; Console Architecture</div>
+                  <p class="project-desc">
+                    Developed a console-based mail management application. Implemented mail operations using object-oriented programming concepts (encapsulation, inheritance, polymorphism, and modular data handling).
+                  </p>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">OOP</span>
+                    <span class="tech-tag">Polymorphism</span>
+                    <span class="tech-tag">Inheritance</span>
+                    <span class="tech-tag">Encapsulation</span>
+                  </div>
+                </div>
+
+                <div class="project-actions">
+                  <button class="btn-inspect-modal" data-project="mailsystem" data-open-terminal="true" style="background:#38bdf8; color:#040e16; font-weight:700; text-decoration:none;" data-cursor="TERMINAL">
+                    <span>LIVE TERMINAL</span>
+                    <span>&#8594;</span>
+                  </button>
+                  <a href="https://github.com/sahana-srinivasan-15/MailManagementSystem" target="_blank" rel="noopener noreferrer" class="btn-code-link" style="text-decoration:none;" data-cursor="GITHUB">
+                    <span>GITHUB REPO</span>
+                    <span>&#8599;</span>
+                  </a>
+                  <button class="btn-code-link" data-project="mailsystem" data-cursor="INSPECT">
+                    <span>INSPECT ARCHITECTURE</span>
+                    <span>&#8594;</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. TECHNICAL SKILLS ARSENAL (STRUCTURED FROM RESUME)
+         ====================================================================== -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">
+            <span class="label-dot"></span>
+            <span>03 &mdash; TECHNICAL SKILLS</span>
+          </div>
+          <h2 class="section-title">
+            Engineering Skills &amp; <span class="text-gradient">Core Competencies</span>
+          </h2>
+          <p class="section-desc">
+            Strong foundation in Java, Spring Boot, REST APIs, React, and SQL backed by 200+ DSA problem solutions on LeetCode.
+          </p>
+        </div>
+
+        <!-- Filter Category Tabs -->
+        <div class="skills-filter-tabs">
+          <button class="skill-filter-btn active" data-filter="all">ALL SKILLS</button>
+          <button class="skill-filter-btn" data-filter="backend">BACKEND &amp; JAVA</button>
+          <button class="skill-filter-btn" data-filter="web">WEB &amp; FRONTEND</button>
+          <button class="skill-filter-btn" data-filter="db">DATABASES &amp; TOOLS</button>
+          <button class="skill-filter-btn" data-filter="concepts">CORE CONCEPTS &amp; DSA</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid">
+          
+          <!-- Java -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">&#9749;</div>
+              <div>
+                <h4 class="skill-name">Java</h4>
+                <span class="skill-level-text">CORE &amp; ADVANCED OOP</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="width: 95%;"></div>
+            </div>
+            <div class="skill-card-footer">
+              <span>Multithreading &bull; JDBC &bull; Collections</span>
+              <span style="color:#ffffff; font-weight:700;">95%</span>
+            </div>
+          </div>
+
+          <!-- Spring Boot -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">&#9881;</div>
+              <div>
+                <h4 class="skill-name">Spring Boot &amp; REST APIs</h4>
+                <span class="skill-level-text">BACKEND ARCHITECTURE</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="width: 92%;"></div>
+            </div>
+            <div class="skill-card-footer">
+              <span>Microservices &bull; Hibernate &bull; JPA</span>
+              <span style="color:#ffffff; font-weight:700;">92%</span>
+            </div>
+          </div>
+
+          <!-- React.js -->
+          <div class="skill-card" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">&#9883;</div>
+              <div>
+                <h4 class="skill-name">React.js</h4>
+                <span class="skill-level-text">MODERN CLIENT SYSTEMS</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="width: 90%;"></div>
+            </div>
+            <div class="skill-card-footer">
+              <span>Hooks &bull; Component Design &bull; State</span>
+              <span style="color:#ffffff; font-weight:700;">90%</span>
+            </div>
+          </div>
+
+          <!-- MySQL & SQL -->
+          <div class="skill-card" data-category="db">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">&#128451;</div>
+              <div>
+                <h4 class="skill-name">MySQL &amp; SQL</h4>
+                <span class="skill-level-text">HACKERRANK GOLD BADGE</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="width: 95%;"></div>
+            </div>
+            <div class="skill-card-footer">
+              <span>Complex Queries &bull; CRUD &bull; Indexing</span>
+              <span style="color:#ffffff; font-weight:700;">95%</span>
+            </div>
+          </div>
+
+          <!-- DSA -->
+          <div class="skill-card" data-category="concepts">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">&#129504;</div>
+              <div>
+                <h4 class="skill-name">Data Structures &amp; Algorithms</h4>
+                <span class="skill-level-text">200+ PROBLEMS SOLVED</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="width: 92%;"></div>
+            </div>
+            <div class="skill-card-footer">
+              <span>LeetCode &bull; Problem Solving &bull; Logic</span>
+              <span style="color:#ffffff; font-weight:700;">92%</span>
+            </div>
+          </div>
+
+          <!-- Python -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">&#128013;</div>
+              <div>
+                <h4 class="skill-name">Python</h4>
+                <span class="skill-level-text">IIT BOMBAY 95% SCORE</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="width: 88%;"></div>
+            </div>
+            <div class="skill-card-footer">
+              <span>Scripts &bull; AI Foundations &bull; Data</span>
+              <span style="color:#ffffff; font-weight:700;">88%</span>
+            </div>
+          </div>
+
+          <!-- C & C++ -->
+          <div class="skill-card" data-category="concepts">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">&#9889;</div>
+              <div>
+                <h4 class="skill-name">C &amp; C++</h4>
+                <span class="skill-level-text">SYSTEMS &amp; MEMORY</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="width: 85%;"></div>
+            </div>
+            <div class="skill-card-footer">
+              <span>Pointers &bull; Memory &bull; Great Learning</span>
+              <span style="color:#ffffff; font-weight:700;">85%</span>
+            </div>
+          </div>
+
+          <!-- Web Tech -->
+          <div class="skill-card" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">&#127760;</div>
+              <div>
+                <h4 class="skill-name">HTML5, CSS3 &amp; JavaScript</h4>
+                <span class="skill-level-text">RESPONSIVE WEB DESIGN</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="width: 92%;"></div>
+            </div>
+            <div class="skill-card-footer">
+              <span>Flexbox &bull; Grid &bull; Modern ES6+</span>
+              <span style="color:#ffffff; font-weight:700;">92%</span>
+            </div>
+          </div>
+
+          <!-- Node.js & Express.js -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">&#9729;</div>
+              <div>
+                <h4 class="skill-name">Node.js &amp; Express.js</h4>
+                <span class="skill-level-text">ASYNC BACKEND SERVICES</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="width: 86%;"></div>
+            </div>
+            <div class="skill-card-footer">
+              <span>REST Services &bull; Middlewares &bull; APIs</span>
+              <span style="color:#ffffff; font-weight:700;">86%</span>
+            </div>
+          </div>
+
+          <!-- MongoDB -->
+          <div class="skill-card" data-category="db">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">&#127811;</div>
+              <div>
+                <h4 class="skill-name">MongoDB</h4>
+                <span class="skill-level-text">NoSQL DOCUMENT DATABASE</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="width: 85%;"></div>
+            </div>
+            <div class="skill-card-footer">
+              <span>Certified &bull; Aggregations &bull; Collections</span>
+              <span style="color:#ffffff; font-weight:700;">85%</span>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-card" data-category="db">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">&#128295;</div>
+              <div>
+                <h4 class="skill-name">Git, Postman, Docker, Maven</h4>
+                <span class="skill-level-text">DEV &amp; BUILD TOOLING</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="width: 88%;"></div>
+            </div>
+            <div class="skill-card-footer">
+              <span>Version Control &bull; API Testing &bull; CI</span>
+              <span style="color:#ffffff; font-weight:700;">88%</span>
+            </div>
+          </div>
+
+          <!-- Core CS Concepts -->
+          <div class="skill-card" data-category="concepts">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">&#128187;</div>
+              <div>
+                <h4 class="skill-name">OS, Networks &amp; DBMS</h4>
+                <span class="skill-level-text">COMPUTER SCIENCE CORE</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-fill" style="width: 90%;"></div>
+            </div>
+            <div class="skill-card-footer">
+              <span>Concurrency &bull; Protocols &bull; Normalization</span>
+              <span style="color:#ffffff; font-weight:700;">90%</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. EDUCATION SECTION (FROM RESUME)
+         ====================================================================== -->
+    <section class="container" id="education" style="padding-top: clamp(4rem, 8vw, 7rem);">
+      <div class="section-header">
+        <div class="section-label">
+          <span class="label-dot"></span>
+          <span>04 &mdash; ACADEMIC CREDENTIALS</span>
+        </div>
+        <h2 class="section-title">
+          Education &amp; <span class="text-gradient">Academic Excellence</span>
+        </h2>
+        <p class="section-desc">
+          Outstanding academic consistency in Computer Science and Engineering with a 9.56 CGPA and top tier school scores.
+        </p>
+      </div>
+
+      <div class="edu-grid">
+        <!-- B.E. Computer Science -->
+        <div class="edu-card">
+          <div>
+            <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-cyan); margin-bottom:0.4rem;">2024 – 2028 &bull; UNDERGRADUATE</div>
+            <h3 class="edu-institution">Dr. Mahalingam College of Engineering and Technology</h3>
+            <div class="edu-location">Pollachi, Tamil Nadu</div>
+            <div class="edu-degree">B.E. Computer Science and Engineering</div>
+          </div>
+          <div>
+            <div class="edu-score-badge">&#9733; CGPA: 9.56 / 10 (till 4th semester)</div>
+          </div>
+        </div>
+
+        <!-- HSC -->
+        <div class="edu-card">
+          <div>
+            <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-violet); margin-bottom:0.4rem;">2023 – 2024 &bull; HIGHER SECONDARY</div>
+            <h3 class="edu-institution">Palaniammal Higher Secondary School</h3>
+            <div class="edu-location">Kaliyapuram, Tamil Nadu</div>
+            <div class="edu-degree">Higher Secondary Certificate (HSC)</div>
+          </div>
+          <div>
+            <div class="edu-score-badge">568 / 600 &bull; Percentage: 94.66%</div>
+          </div>
+        </div>
+
+        <!-- SSLC -->
+        <div class="edu-card">
+          <div>
+            <div style="font-family:var(--font-mono); font-size:0.75rem; color:#38bdf8; margin-bottom:0.4rem;">2021 – 2022 &bull; SECONDARY SCHOOL</div>
+            <h3 class="edu-institution">Palaniammal Higher Secondary School</h3>
+            <div class="edu-location">Kaliyapuram, Tamil Nadu</div>
+            <div class="edu-degree">Secondary School Leaving Certificate (SSLC)</div>
+          </div>
+          <div>
+            <div class="edu-score-badge">475 / 500 &bull; Percentage: 95.00%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. CERTIFICATIONS & ACHIEVEMENTS (FROM RESUME)
+         ====================================================================== -->
+    <section class="container" id="certifications" style="padding-top: clamp(4rem, 8vw, 7rem); padding-bottom: clamp(3rem, 6vw, 5rem);">
+      <div class="section-header">
+        <div class="section-label">
+          <span class="label-dot"></span>
+          <span>05 &mdash; CERTIFICATIONS &amp; ACHIEVEMENTS</span>
+        </div>
+        <h2 class="section-title">
+          Verified <span class="text-gradient">Certifications</span> &amp; Honors
+        </h2>
+        <p class="section-desc">
+          Professional certifications across Java, Python, Frontend, SQL, and Data Structures issued by NPTEL, Infosys, Coursera, IBM, and IIT Bombay.
+        </p>
+      </div>
+
+      <!-- Achievements Banner -->
+      <div style="display:flex; gap:1.25rem; flex-wrap:wrap; margin-bottom: 2.5rem;">
+        <div style="flex:1; min-width:280px; background:rgba(16,185,129,0.08); border:1px solid rgba(16,185,129,0.25); border-radius:var(--radius-lg); padding:1.25rem 1.5rem; display:flex; align-items:center; gap:1rem;">
+          <div style="font-size:1.8rem;">&#129504;</div>
+          <div>
+            <strong style="color:#ffffff; font-family:var(--font-display); font-size:1.1rem; display:block;">200+ DSA Problems Solved</strong>
+            <span style="font-family:var(--font-mono); font-size:0.8rem; color:#6ee7b7;">LeetCode Algorithmic Problem Solving</span>
+          </div>
+        </div>
+
+        <div style="flex:1; min-width:280px; background:rgba(245,158,11,0.08); border:1px solid rgba(245,158,11,0.25); border-radius:var(--radius-lg); padding:1.25rem 1.5rem; display:flex; align-items:center; gap:1rem;">
+          <div style="font-size:1.8rem;">&#127942;</div>
+          <div>
+            <strong style="color:#ffffff; font-family:var(--font-display); font-size:1.1rem; display:block;">HackerRank SQL Gold Badge</strong>
+            <span style="font-family:var(--font-mono); font-size:0.8rem; color:#fde68a;">5-Star Verified SQL Proficiency</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications Cards Grid -->
+      <div class="cert-grid">
+        
+        <!-- 1. NPTEL -->
+        <div class="cert-card">
+          <div class="cert-top">
+            <div class="cert-icon">&#9749;</div>
+            <div>
+              <h4 class="cert-title">Java Programming Certification</h4>
+              <div class="cert-org">NPTEL</div>
+            </div>
+          </div>
+          <div class="cert-date">
+            <span>Verified Credential</span>
+            <span style="color:#ffffff; font-weight:600;">April 2026</span>
+          </div>
+        </div>
+
+        <!-- 2. Infosys -->
+        <div class="cert-card">
+          <div class="cert-top">
+            <div class="cert-icon">&#128188;</div>
+            <div>
+              <h4 class="cert-title">Java Foundation Certification</h4>
+              <div class="cert-org">Infosys</div>
+            </div>
+          </div>
+          <div class="cert-date">
+            <span>Verified Credential</span>
+            <span style="color:#ffffff; font-weight:600;">April 2026</span>
+          </div>
+        </div>
+
+        <!-- 3. Coursera Johns Hopkins -->
+        <div class="cert-card">
+          <div class="cert-top">
+            <div class="cert-icon">&#127760;</div>
+            <div>
+              <h4 class="cert-title">Frontend Development Certification</h4>
+              <div class="cert-org">Coursera (Johns Hopkins University)</div>
+            </div>
+          </div>
+          <div class="cert-date">
+            <span>Verified Credential</span>
+            <span style="color:#ffffff; font-weight:600;">January 2025</span>
+          </div>
+        </div>
+
+        <!-- 4. EduPyramids & IIT Bombay -->
+        <div class="cert-card">
+          <div class="cert-top">
+            <div class="cert-icon">&#128013;</div>
+            <div>
+              <h4 class="cert-title">Python 3.4.3 Training (Score: 95%)</h4>
+              <div class="cert-org">EduPyramids &amp; IIT Bombay</div>
+            </div>
+          </div>
+          <div class="cert-date">
+            <span style="color:#10b981; font-weight:700;">Score: 95%</span>
+            <span style="color:#ffffff; font-weight:600;">February 2026</span>
+          </div>
+        </div>
+
+        <!-- 5. IBM -->
+        <div class="cert-card">
+          <div class="cert-top">
+            <div class="cert-icon">&#128640;</div>
+            <div>
+              <h4 class="cert-title">Python Data Science, AI &amp; Development</h4>
+              <div class="cert-org">IBM</div>
+            </div>
+          </div>
+          <div class="cert-date">
+            <span>Verified Credential</span>
+            <span style="color:#ffffff; font-weight:600;">August 2026</span>
+          </div>
+        </div>
+
+        <!-- 6. Great Learning -->
+        <div class="cert-card">
+          <div class="cert-top">
+            <div class="cert-icon">&#9889;</div>
+            <div>
+              <h4 class="cert-title">Data Structures in C</h4>
+              <div class="cert-org">Great Learning</div>
+            </div>
+          </div>
+          <div class="cert-date">
+            <span>Verified Credential</span>
+            <span style="color:#ffffff; font-weight:600;">December 2025</span>
+          </div>
+        </div>
+
+        <!-- 7. MongoDB -->
+        <div class="cert-card">
+          <div class="cert-top">
+            <div class="cert-icon">&#127811;</div>
+            <div>
+              <h4 class="cert-title">Certification of Completion</h4>
+              <div class="cert-org">MongoDB</div>
+            </div>
+          </div>
+          <div class="cert-date">
+            <span>Verified Credential</span>
+            <span style="color:#ffffff; font-weight:600;">July 2025</span>
+          </div>
+        </div>
+
+        <!-- 8. Simplilearn SQL -->
+        <div class="cert-card">
+          <div class="cert-top">
+            <div class="cert-icon">&#128451;</div>
+            <div>
+              <h4 class="cert-title">SQL for Data Science</h4>
+              <div class="cert-org">Simplilearn</div>
+            </div>
+          </div>
+          <div class="cert-date">
+            <span>Verified Credential</span>
+            <span style="color:#ffffff; font-weight:600;">June 2025</span>
+          </div>
+        </div>
+
+        <!-- 9. Simplilearn Microsoft -->
+        <div class="cert-card">
+          <div class="cert-top">
+            <div class="cert-icon">&#128202;</div>
+            <div>
+              <h4 class="cert-title">Introduction to Microsoft Excel</h4>
+              <div class="cert-org">Simplilearn (Microsoft)</div>
+            </div>
+          </div>
+          <div class="cert-date">
+            <span>Verified Credential</span>
+            <span style="color:#ffffff; font-weight:600;">April 2025</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         9. CONTACT TRANSMISSION HUB (FROM RESUME)
+         ====================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <!-- Contact Info Column -->
+          <div class="contact-info-col">
+            <div class="section-label">
+              <span class="label-dot"></span>
+              <span>06 &mdash; GET IN TOUCH</span>
+            </div>
+            <h2 class="section-title">
+              Let's Build Something <span class="text-gradient">Extraordinary</span>
+            </h2>
+            <p>
+              I am actively seeking <strong>Software Developer</strong>, <strong>Backend Developer</strong>, and <strong>Full Stack Developer</strong> opportunities. Open to discussions on impactful engineering roles.
+            </p>
+
+            <div class="contact-cards-stack">
+              <!-- Phone Card -->
+              <div class="contact-direct-card">
+                <div class="direct-card-info">
+                  <span class="direct-card-icon">&#128222;</span>
+                  <div>
+                    <div class="direct-card-title">PHONE / WHATSAPP</div>
+                    <div class="direct-card-val">+91 8248065740</div>
+                  </div>
+                </div>
+                <a href="tel:+918248065740" class="btn-copy-email" style="text-decoration:none;" data-cursor="CALL">CALL NOW</a>
+              </div>
+
+              <!-- Email Card -->
+              <div class="contact-direct-card">
+                <div class="direct-card-info">
+                  <span class="direct-card-icon">&#9993;</span>
+                  <div>
+                    <div class="direct-card-title">DIRECT INBOX</div>
+                    <div class="direct-card-val">sahanasrinivasan4@gmail.com</div>
+                  </div>
+                </div>
+                <button class="btn-copy-email" id="btn-copy-email" data-cursor="COPY">COPY EMAIL</button>
+              </div>
+
+              <!-- LinkedIn Card -->
+              <div class="contact-direct-card">
+                <div class="direct-card-info">
+                  <span class="direct-card-icon">&#128188;</span>
+                  <div>
+                    <div class="direct-card-title">LINKEDIN PROFILE</div>
+                    <div class="direct-card-val">linkedin.com/in/sahanasrinivasan15</div>
+                  </div>
+                </div>
+                <a href="https://linkedin.com/in/sahanasrinivasan15" target="_blank" rel="noopener noreferrer" class="btn-copy-email" style="text-decoration:none;" data-cursor="VISIT">CONNECT ↗</a>
+              </div>
+
+              <!-- GitHub Card -->
+              <div class="contact-direct-card">
+                <div class="direct-card-info">
+                  <span class="direct-card-icon">&#128421;</span>
+                  <div>
+                    <div class="direct-card-title">GITHUB REPOSITORIES</div>
+                    <div class="direct-card-val">github.com/sahana-srinivasan-15</div>
+                  </div>
+                </div>
+                <a href="https://github.com/sahana-srinivasan-15" target="_blank" rel="noopener noreferrer" class="btn-copy-email" style="text-decoration:none;" data-cursor="VISIT">VISIT ↗</a>
+              </div>
+
+              <!-- Location Card -->
+              <div class="contact-direct-card">
+                <div class="direct-card-info">
+                  <span class="direct-card-icon">&#127758;</span>
+                  <div>
+                    <div class="direct-card-title">LOCATION &amp; STATUS</div>
+                    <div class="direct-card-val">Anaimalai / Pollachi, Tamil Nadu &bull; Immediate Joiner</div>
+                  </div>
+                </div>
+                <span style="font-family:var(--font-mono); font-size:0.75rem; color:#10b981;">AVAILABLE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-card">
+            <div id="form-toast" class="form-toast"></div>
+
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="form-name" class="form-label">YOUR NAME OR COMPANY</label>
+                <input type="text" id="form-name" class="form-input" placeholder="e.g. Infosys / Google / TCS" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">YOUR EMAIL ADDRESS</label>
+                <input type="email" id="form-email" class="form-input" placeholder="e.g. recruiter@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">MESSAGE / OPPORTUNITY DETAILS</label>
+                <textarea id="form-message" class="form-textarea" placeholder="Detail your role requirements, team, and next steps..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-magnetic btn-primary" style="width: 100%; justify-content: center;" data-cursor="SEND">
+                <span>SEND TRANSMISSION</span>
+                <span class="btn-icon-arrow">&#8599;</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         11. FOOTER
+         ====================================================================== -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-credits">
+          &copy; 2026 <span>SAHANA T S</span>. ALL RIGHTS RESERVED.
+          <div style="font-size:0.75rem; color:var(--text-tertiary); margin-top:0.25rem;">
+            Software Developer | B.E. Computer Science and Engineering (Dr. MCET)
+          </div>
+        </div>
+
+        <!-- Availability Status Pill in Footer -->
+        <div class="status-pill status-pill-footer">
+          <span class="radar-dot"></span>
+          <span>OPEN FOR SOFTWARE DEVELOPER &bull; FULL-STACK ROLES</span>
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="#hero" class="footer-link">Back to Top &uarr;</a></li>
+          <li><a href="https://linkedin.com/in/sahanasrinivasan15" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a></li>
+          <li><a href="https://github.com/sahana-srinivasan-15" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a></li>
+          <li><a href="mailto:sahanasrinivasan4@gmail.com" class="footer-link">Email</a></li>
+        </ul>
+      </div>
+    </footer>
+
+  </div><!-- /page-wrapper -->
+
+  <!-- ========================================================================
+       12. ARCHITECTURE CASE STUDY MODAL (SLIDE-OVER)
+       ======================================================================== -->
+  <div class="modal-overlay modal-slide-over" id="case-study-modal" data-lenis-prevent="true">
+    <div class="modal-panel" data-lenis-prevent="true">
+      <div class="modal-header">
+        <div>
+          <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-cyan); text-transform:uppercase; letter-spacing:0.1em;">DEEP ARCHITECTURAL DIVE</span>
+          <h3 id="modal-project-title" style="margin-top:0.25rem;">Project Title</h3>
+          <div id="modal-project-subtitle" class="modal-subtitle">Subtitle</div>
+        </div>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Case Study" data-cursor="CLOSE">&times;</button>
+      </div>
+
+      <div class="modal-content">
+        <div class="modal-section-block">
+          <h4>The Challenge &amp; Problem Space</h4>
+          <p id="modal-problem-desc">Description of the problem space.</p>
+        </div>
+
+        <div class="modal-section-block">
+          <h4>Technical Architecture &amp; Implementation</h4>
+          <p id="modal-solution-desc">Description of the architectural solution.</p>
+        </div>
+
+        <!-- Interactive Terminal Simulator Section (for Bank & Mail Systems) -->
+        <div class="modal-section-block" id="modal-terminal-section" style="display: none;">
+          <h4>Interactive Console Terminal (Live Simulation)</h4>
+          <div class="console-terminal-card">
+            <div class="console-terminal-header">
+              <div class="console-dots">
+                <span class="console-dot dot-red"></span>
+                <span class="console-dot dot-yellow"></span>
+                <span class="console-dot dot-green"></span>
+              </div>
+              <span class="console-terminal-title" id="console-terminal-title">sahana@dev: ~/MailManagementSystem (Java SE)</span>
+              <button type="button" class="console-reset-btn" id="console-reset-btn" title="Reset Terminal">&#x21bb; Clear</button>
+            </div>
+            <div class="console-screen" id="console-screen" tabindex="0">
+            </div>
+            <div class="console-quick-actions" id="console-quick-actions">
+            </div>
+            <form class="console-input-row" id="console-input-form">
+              <span class="console-prompt-label">&gt;</span>
+              <input type="text" class="console-input" id="console-input" placeholder="Enter option (1-6) or command..." autocomplete="off">
+              <button type="submit" class="console-submit-btn">EXECUTE</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="modal-section-block">
+          <h4>Key Telemetry &amp; System Specifications</h4>
+          <div class="modal-spec-grid" id="modal-specs-container">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <div class="modal-section-block" style="margin-top: 2rem; display: flex; flex-direction: column; gap: 0.75rem;">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn-magnetic btn-primary" id="modal-live-link" style="width: 100%; justify-content: center; text-decoration: none; display: none;">
+            <span>VISIT PROJECT</span>
+            <span>&#8599;</span>
+          </a>
+          <a href="https://github.com/sahana-srinivasan-15" target="_blank" rel="noopener noreferrer" class="btn-magnetic btn-secondary" id="modal-github-link" style="width: 100%; justify-content: center; text-decoration: none;">
+            <span>EXPLORE SOURCE ON GITHUB</span>
+            <span>&#8599;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CDN Scripts for Animation (GSAP 3, ScrollTrigger, Lenis) with Local Fallbacks -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+  <!-- Core Scripts -->
+  <script src="js/audio.js"></script>
+  <script src="js/canvas-bg.js"></script>
+  <script src="js/tilt.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
